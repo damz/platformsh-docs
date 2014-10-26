@@ -1,0 +1,16 @@
+{
+    "plugins": [
+        "anchors",
+        "richquotes"
+    ],
+    "links": {
+        "gitbook": false,
+        "sharing": {
+            "google": false,
+            "facebook": false,
+            "twitter": null,
+            "weibo": false,
+            "all": false
+        }
+    }
+}
