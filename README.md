@@ -1,10 +1,8 @@
-Platform.sh documentation
-=============================
+## Contribute to the Platform.sh documentation
 
 Here is what you need to build the Platform.sh documentation locally.
 
-Getting started
----------------------------
+### Getting Started
 
 1. Clone the repository
 
@@ -13,20 +11,25 @@ Getting started
   $ cd platformsh-docs
   ```
 
-2. Install Sphinx
+2. Install [Gitbook](https://github.com/GitbookIO/gitbook) and the required plugins via NPM
 
   ```
-  $ sudo pip install sphinx
+  $ npm install gitbook -g
+  $ npm install gitbook-plugin-richquotes
+  $ npm install --save gitbook-plugin-anchors
   ```
 
-  (on Mac OS X you might need to do ``easy_install pip`` first)
-
-3. Build the html
+3. Build the book
 
   ```
-  $ make html
+  gitbook build
   ```
 
-Once the build is finished, the HTML pages should be in `_build/html`.
+Once the build is finished, the HTML pages should be in `_book/`.
+
+### Using the Gitbook Editor
+
+You can download the Gitbook Editor [here](https://www.gitbook.io/#write).
+
 
 ![http://creativecommons.org/licenses/by-sa/4.0/](images/CC-BY-SA.png)
